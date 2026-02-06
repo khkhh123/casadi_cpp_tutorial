@@ -1,0 +1,6 @@
+# from us
+**/.idea
+**/.vscode
+
+external/casadi-main/build
+external/casadi-main/install
