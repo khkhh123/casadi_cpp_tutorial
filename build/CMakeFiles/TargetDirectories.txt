@@ -1,3 +1,4 @@
-/home/khkhh/Projects/casadi_cpp_tutorial/build/CMakeFiles/cruise_control_mpc.dir
+/home/khkhh/Projects/casadi_cpp_tutorial/build/CMakeFiles/cruise_control_mpc_low.dir
+/home/khkhh/Projects/casadi_cpp_tutorial/build/CMakeFiles/cruise_control_mpc_high.dir
 /home/khkhh/Projects/casadi_cpp_tutorial/build/CMakeFiles/edit_cache.dir
 /home/khkhh/Projects/casadi_cpp_tutorial/build/CMakeFiles/rebuild_cache.dir

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cruise_control_mpc.dir/src/main.cpp.o"
-  "CMakeFiles/cruise_control_mpc.dir/src/main.cpp.o.d"
+  "CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.o"
+  "CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.o.d"
   "cruise_control_mpc"
   "cruise_control_mpc.pdb"
 )

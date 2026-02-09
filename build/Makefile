@@ -117,41 +117,78 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cruise_control_mpc
+# Target rules for targets named cruise_control_mpc_low
 
 # Build rule for target.
-cruise_control_mpc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cruise_control_mpc
-.PHONY : cruise_control_mpc
+cruise_control_mpc_low: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cruise_control_mpc_low
+.PHONY : cruise_control_mpc_low
 
 # fast build rule for target.
-cruise_control_mpc/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cruise_control_mpc.dir/build.make CMakeFiles/cruise_control_mpc.dir/build
-.PHONY : cruise_control_mpc/fast
+cruise_control_mpc_low/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cruise_control_mpc_low.dir/build.make CMakeFiles/cruise_control_mpc_low.dir/build
+.PHONY : cruise_control_mpc_low/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+#=============================================================================
+# Target rules for targets named cruise_control_mpc_high
+
+# Build rule for target.
+cruise_control_mpc_high: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cruise_control_mpc_high
+.PHONY : cruise_control_mpc_high
+
+# fast build rule for target.
+cruise_control_mpc_high/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cruise_control_mpc_high.dir/build.make CMakeFiles/cruise_control_mpc_high.dir/build
+.PHONY : cruise_control_mpc_high/fast
+
+src/main_high_level.o: src/main_high_level.cpp.o
+.PHONY : src/main_high_level.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cruise_control_mpc.dir/build.make CMakeFiles/cruise_control_mpc.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/main_high_level.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cruise_control_mpc_high.dir/build.make CMakeFiles/cruise_control_mpc_high.dir/src/main_high_level.cpp.o
+.PHONY : src/main_high_level.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/main_high_level.i: src/main_high_level.cpp.i
+.PHONY : src/main_high_level.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cruise_control_mpc.dir/build.make CMakeFiles/cruise_control_mpc.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/main_high_level.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cruise_control_mpc_high.dir/build.make CMakeFiles/cruise_control_mpc_high.dir/src/main_high_level.cpp.i
+.PHONY : src/main_high_level.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/main_high_level.s: src/main_high_level.cpp.s
+.PHONY : src/main_high_level.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cruise_control_mpc.dir/build.make CMakeFiles/cruise_control_mpc.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/main_high_level.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cruise_control_mpc_high.dir/build.make CMakeFiles/cruise_control_mpc_high.dir/src/main_high_level.cpp.s
+.PHONY : src/main_high_level.cpp.s
+
+src/main_low_level.o: src/main_low_level.cpp.o
+.PHONY : src/main_low_level.o
+
+# target to build an object file
+src/main_low_level.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cruise_control_mpc_low.dir/build.make CMakeFiles/cruise_control_mpc_low.dir/src/main_low_level.cpp.o
+.PHONY : src/main_low_level.cpp.o
+
+src/main_low_level.i: src/main_low_level.cpp.i
+.PHONY : src/main_low_level.i
+
+# target to preprocess a source file
+src/main_low_level.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cruise_control_mpc_low.dir/build.make CMakeFiles/cruise_control_mpc_low.dir/src/main_low_level.cpp.i
+.PHONY : src/main_low_level.cpp.i
+
+src/main_low_level.s: src/main_low_level.cpp.s
+.PHONY : src/main_low_level.s
+
+# target to generate assembly for a file
+src/main_low_level.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cruise_control_mpc_low.dir/build.make CMakeFiles/cruise_control_mpc_low.dir/src/main_low_level.cpp.s
+.PHONY : src/main_low_level.cpp.s
 
 # Help Target
 help:
@@ -161,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cruise_control_mpc"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... cruise_control_mpc_high"
+	@echo "... cruise_control_mpc_low"
+	@echo "... src/main_high_level.o"
+	@echo "... src/main_high_level.i"
+	@echo "... src/main_high_level.s"
+	@echo "... src/main_low_level.o"
+	@echo "... src/main_low_level.i"
+	@echo "... src/main_low_level.s"
 .PHONY : help
 
 

@@ -69,28 +69,28 @@ include CMakeFiles/cruise_control_mpc.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cruise_control_mpc.dir/flags.make
 
-CMakeFiles/cruise_control_mpc.dir/src/main.cpp.o: CMakeFiles/cruise_control_mpc.dir/flags.make
-CMakeFiles/cruise_control_mpc.dir/src/main.cpp.o: ../src/main.cpp
-CMakeFiles/cruise_control_mpc.dir/src/main.cpp.o: CMakeFiles/cruise_control_mpc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/khkhh/Projects/casadi_cpp_tutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cruise_control_mpc.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cruise_control_mpc.dir/src/main.cpp.o -MF CMakeFiles/cruise_control_mpc.dir/src/main.cpp.o.d -o CMakeFiles/cruise_control_mpc.dir/src/main.cpp.o -c /home/khkhh/Projects/casadi_cpp_tutorial/src/main.cpp
+CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.o: CMakeFiles/cruise_control_mpc.dir/flags.make
+CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.o: ../src/main_lower_level.cpp
+CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.o: CMakeFiles/cruise_control_mpc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/khkhh/Projects/casadi_cpp_tutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.o -MF CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.o.d -o CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.o -c /home/khkhh/Projects/casadi_cpp_tutorial/src/main_lower_level.cpp
 
-CMakeFiles/cruise_control_mpc.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cruise_control_mpc.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/khkhh/Projects/casadi_cpp_tutorial/src/main.cpp > CMakeFiles/cruise_control_mpc.dir/src/main.cpp.i
+CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/khkhh/Projects/casadi_cpp_tutorial/src/main_lower_level.cpp > CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.i
 
-CMakeFiles/cruise_control_mpc.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cruise_control_mpc.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/khkhh/Projects/casadi_cpp_tutorial/src/main.cpp -o CMakeFiles/cruise_control_mpc.dir/src/main.cpp.s
+CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/khkhh/Projects/casadi_cpp_tutorial/src/main_lower_level.cpp -o CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.s
 
 # Object files for target cruise_control_mpc
 cruise_control_mpc_OBJECTS = \
-"CMakeFiles/cruise_control_mpc.dir/src/main.cpp.o"
+"CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.o"
 
 # External object files for target cruise_control_mpc
 cruise_control_mpc_EXTERNAL_OBJECTS =
 
-cruise_control_mpc: CMakeFiles/cruise_control_mpc.dir/src/main.cpp.o
+cruise_control_mpc: CMakeFiles/cruise_control_mpc.dir/src/main_lower_level.cpp.o
 cruise_control_mpc: CMakeFiles/cruise_control_mpc.dir/build.make
 cruise_control_mpc: CMakeFiles/cruise_control_mpc.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/khkhh/Projects/casadi_cpp_tutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cruise_control_mpc"

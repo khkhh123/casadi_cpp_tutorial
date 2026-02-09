@@ -13,11 +13,16 @@ include_directories(${CASADI_ROOT}/include)
 link_directories(${CASADI_ROOT}/lib)
 
 # 4. 실행 파일 생성
-add_executable(cruise_control_mpc src/main.cpp)
+add_executable(cruise_control_mpc_low src/main_low_level.cpp)
+add_executable(cruise_control_mpc_high src/main_high_level.cpp)
 
 # 5. CasADi 라이브러리 링크
-target_link_libraries(cruise_control_mpc casadi)
+target_link_libraries(cruise_control_mpc_low casadi)
+target_link_libraries(cruise_control_mpc_high casadi)
 
 # 만약 런타임에 .so 파일을 못 찾는다면 아래 설정 추가 (Linux 전용)
-set_target_properties(cruise_control_mpc PROPERTIES INSTALL_RPATH "${CASADI_ROOT}/lib")
-set_target_properties(cruise_control_mpc PROPERTIES BUILD_WITH_INSTALL_RPATH TRUE)
+set_target_properties(cruise_control_mpc_low PROPERTIES INSTALL_RPATH "${CASADI_ROOT}/lib")
+set_target_properties(cruise_control_mpc_low PROPERTIES BUILD_WITH_INSTALL_RPATH TRUE)
+
+set_target_properties(cruise_control_mpc_high PROPERTIES INSTALL_RPATH "${CASADI_ROOT}/lib")
+set_target_properties(cruise_control_mpc_high PROPERTIES BUILD_WITH_INSTALL_RPATH TRUE)

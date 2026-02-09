@@ -31,6 +31,7 @@ int main() {
     SX v0 = SX::sym("v0");
 
     g.push_back(X(0) - v0); // 초기 속도 고정
+    
     for (int k = 0; k < N; ++k) {
         // 비용 함수: (현재속도 - 목표속도)^2 + 제어입력 페널티
         J += pow(X(k) - v_ref, 2) + 1e-7 * pow(U(k), 2);
